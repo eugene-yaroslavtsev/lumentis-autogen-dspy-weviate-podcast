@@ -1,0 +1,34 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Self-Discover in DSPy
+
+Chris Dossman, the founder of Dicer AI, has implemented a powerful capability called "self-discover" within the DSPy framework. This innovative feature enables AI systems to search for their own reasoning and compile themselves, pushing the boundaries of what's possible with AI technology.
+
+<Callout type="info">
+  Self-discover is an engineering hack that allows for the generation of high-quality training data, similar to what companies like Google and DeepMind might be using internally.
+</Callout>
+
+The self-discover capability is based on the concept of "rag for thought," which is a more efficient alternative to techniques like "tree of thought." While tree of thought requires running the language model 50-60 times to build a tree of possible paths, self-discover achieves better results with just four calls, significantly reducing costs and improving output quality.
+
+At the core of self-discover are [atomic reasoning modules](/self-discover-dspy/atomic-reasoning-modules), which are pre-defined questions or prompts that help guide the AI system's reasoning process. These modules cover a wide range of reasoning strategies, such as:
+
+- Devising experiments to solve problems
+- Simplifying problems to make them easier to solve
+- Identifying physical constraints like limited resources or space
+
+The self-discover process consists of four distinct steps:
+
+1. **Select:** Choose the most relevant reasoning modules for the given task.
+2. **Adapt:** Modify the selected modules to fit the specific task at hand.
+3. **Plan:** Create a step-by-step guide with descriptions and actions for each step.
+4. **Solve:** Execute the plan, solving each step independently to arrive at the final answer.
+
+By breaking down the reasoning process into these steps and leveraging the power of atomic reasoning modules, self-discover enables AI systems to generate high-quality, well-thought-out solutions to complex problems.
+
+<Callout type="success">
+  Self-discover has been shown to outperform other prompting techniques, including chain of thought, in terms of output quality and cost-effectiveness.
+</Callout>
+
+One of the key advantages of self-discover is its flexibility. The capability can be wrapped around any task or prompt, making it a versatile tool for enhancing AI performance across a wide range of applications. As Chris continues to refactor Dicer AI's pipelines using DSPy, he plans to incorporate self-discover to improve results and streamline processes.
+
+To learn more about how self-discover works under the hood, check out the sections on [atomic reasoning modules](/self-discover-dspy/atomic-reasoning-modules) and [compiling reasoning for specific tasks](/self-discover-dspy/compiling-reasoning-specific-tasks).

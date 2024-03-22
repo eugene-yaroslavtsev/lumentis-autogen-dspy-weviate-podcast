@@ -1,0 +1,66 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# DSPy Compilers and Optimizers
+
+DSPy's compilers and optimizers are powerful tools that enhance the framework's capabilities, making it easier for developers to build efficient and effective AI systems. These components play a crucial role in transforming high-level DSPy code into optimized, executable representations.
+
+## Compilers
+
+DSPy's compilers are responsible for translating DSPy code into a lower-level representation that can be efficiently executed by the underlying hardware or software platform. The compilation process involves several stages:
+
+<Steps>
+
+### Parsing
+
+The DSPy code is parsed into an abstract syntax tree (AST), which represents the structure of the code in a hierarchical manner.
+
+### Optimization
+
+The AST undergoes various optimization passes to improve the efficiency and performance of the code. This may include techniques such as:
+
+- Constant folding
+- Dead code elimination
+- Loop unrolling
+- Function inlining
+
+### Code Generation
+
+The optimized AST is then used to generate the target code, which can be executed by the underlying platform. This may involve generating machine code, bytecode, or other lower-level representations.
+
+</Steps>
+
+<Callout type="info">
+DSPy's compilers are designed to be extensible, allowing developers to add custom optimization passes or code generation backends to suit their specific needs.
+</Callout>
+
+## Optimizers
+
+DSPy's optimizers work hand-in-hand with the compilers to further improve the performance and efficiency of the generated code. Some of the key optimizers in DSPy include:
+
+### Gradient Descent Optimizer
+
+The gradient descent optimizer is used to minimize the loss function of a model by iteratively adjusting its parameters in the direction of steepest descent. DSPy provides several variants of gradient descent, such as:
+
+- Stochastic Gradient Descent (SGD)
+- Adam
+- RMSprop
+
+### Tensor Fusion Optimizer
+
+The tensor fusion optimizer combines multiple tensor operations into a single, optimized operation, reducing the overhead of memory access and data transfer. This can significantly improve the performance of deep learning models, especially on GPU-accelerated hardware.
+
+### Quantization Optimizer
+
+The quantization optimizer reduces the precision of the model's parameters and activations, allowing for faster computation and reduced memory usage. DSPy supports various quantization schemes, such as:
+
+- Post-training quantization
+- Quantization-aware training
+- Dynamic quantization
+
+<Callout type="warning">
+Quantization can lead to a slight decrease in model accuracy, so it's essential to carefully evaluate the trade-off between performance and accuracy when using this optimizer.
+</Callout>
+
+By leveraging DSPy's compilers and optimizers, developers can create highly efficient and performant AI systems that can tackle complex real-world problems. These tools are particularly valuable when working with large-scale datasets and complex model architectures, as they can significantly reduce training and inference times.
+
+For more information on how DSPy's compilers and optimizers can be used in conjunction with other features, such as [self-discover](/self-discover-dspy) and [atomic reasoning modules](/self-discover-dspy/atomic-reasoning-modules), please refer to their respective sections in the documentation.

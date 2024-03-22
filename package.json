@@ -1,0 +1,31 @@
+{
+  "name": "lumentis-autogen-dspy-weviate-podcast",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene-yaroslavtsev/lumentis-autogen-dspy-weviate-podcast.git"
+  },
+  "description": "Chris Dossman, AI startup founder is talking to someone from Weviate, a vector embedding DB company. TThey 're talking about various AI topics : Chris’ Entrepreneurial Journey, FAQx and Dicer AI, Existential Risk of DSPy, LangChain vs. DSPy, Q for Sam Altman, Lessons from Jason Liu, DSPy Compilers, DSPy Discord, Atomic Reasoning Modules, Compiling Reasoning for a Particular Task, Prior Knowledge in AI, In-Context Vectors, Dicer AI, and People Driven Development%",
+  "keywords": [
+    "DSPy",
+    "reasoning modules",
+    "compiling reasoning for a specific task"
+  ],
+  "scripts": {
+    "start": "next start",
+    "build": "next build"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "next": "^14.1.4",
+    "nextjs": "^0.0.3",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.4.3"
+  }
+}

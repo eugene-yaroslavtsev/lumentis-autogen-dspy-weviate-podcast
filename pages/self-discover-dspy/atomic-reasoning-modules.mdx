@@ -1,0 +1,59 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Atomic Reasoning Modules
+
+In the [self-discover capability](/self-discover-dspy) of DSPy, atomic reasoning modules play a crucial role in enabling structured reasoning for AI systems. These modules are designed to break down complex reasoning tasks into smaller, more manageable units, allowing the AI to approach problems in a step-by-step manner.
+
+## What are Atomic Reasoning Modules?
+
+Atomic reasoning modules are predefined, self-contained units of reasoning that can be combined and adapted to solve specific tasks. Each module represents a particular type of reasoning or problem-solving strategy, such as:
+
+- Identifying the core issue or problem
+- Breaking down the problem into smaller sub-problems
+- Considering alternative perspectives or approaches
+- Evaluating the feasibility of potential solutions
+- Analyzing the implications or consequences of actions
+
+By decomposing complex reasoning into these atomic modules, the AI system can more effectively navigate and solve challenging problems.
+
+## Benefits of Atomic Reasoning Modules
+
+The use of atomic reasoning modules in DSPy offers several key benefits:
+
+1. **Improved Output Quality**: By structuring the reasoning process, atomic modules help ensure that the AI system considers various aspects of the problem and arrives at a well-thought-out solution, reducing the likelihood of hallucinations or irrelevant outputs.
+
+2. **Enhanced Efficiency**: Atomic reasoning modules allow the AI to focus on specific aspects of the problem at each step, avoiding unnecessary computations and improving overall efficiency.
+
+3. **Increased Interpretability**: The step-by-step nature of atomic reasoning modules makes the AI's decision-making process more transparent and interpretable, as users can trace the reasoning steps taken to arrive at a particular conclusion.
+
+4. **Flexibility and Adaptability**: Atomic reasoning modules can be combined and adapted to suit a wide range of tasks and domains, making them a versatile tool for AI reasoning.
+
+<Callout type="info">
+Atomic reasoning modules are not limited to a fixed set of predefined strategies. Researchers and developers can create custom reasoning modules tailored to specific domains or problem types, further extending the capabilities of the DSPy framework.
+</Callout>
+
+## Implementing Atomic Reasoning Modules in DSPy
+
+To leverage atomic reasoning modules in your DSPy projects, follow these steps:
+
+<Steps>
+
+### Step 1: Identify the reasoning modules relevant to your task
+
+Consider the nature of the problem you are trying to solve and select the appropriate reasoning modules that can help break down the problem into manageable steps.
+
+### Step 2: Adapt the selected modules to your specific task
+
+Modify the chosen reasoning modules to fit the context of your problem. This may involve adjusting the prompts, inputs, or outputs of each module to align with your task requirements.
+
+### Step 3: Combine the adapted modules in a logical sequence
+
+Arrange the adapted reasoning modules in a sequence that reflects the natural flow of problem-solving for your task. Ensure that the outputs of one module can serve as inputs for the next, creating a coherent reasoning chain.
+
+### Step 4: Integrate the reasoning chain into your DSPy pipeline
+
+Incorporate the sequence of atomic reasoning modules into your larger DSPy pipeline, allowing the AI system to utilize this structured reasoning approach when tackling the problem at hand.
+
+</Steps>
+
+By leveraging atomic reasoning modules in DSPy, you can enable your AI systems to approach complex problems in a more structured and effective manner, ultimately leading to improved output quality and increased efficiency. To learn more about how these modules are compiled for specific tasks, visit the [Compiling Reasoning for Specific Tasks](/compiling-reasoning-specific-tasks) section.
